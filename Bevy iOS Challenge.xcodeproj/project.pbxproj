@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC71271EC8630036F140 /* AppDelegate.swift */; };
 		23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC73271EC8630036F140 /* SceneDelegate.swift */; };
-		23D2AC76271EC8630036F140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC75271EC8630036F140 /* ViewController.swift */; };
 		23D2AC79271EC8630036F140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC77271EC8630036F140 /* Main.storyboard */; };
 		23D2AC7C271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC7A271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld */; };
 		23D2AC7E271EC8640036F140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC7D271EC8640036F140 /* Assets.xcassets */; };
 		23D2AC81271EC8640036F140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC7F271EC8640036F140 /* LaunchScreen.storyboard */; };
 		23D2AC89271ECC3A0036F140 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC88271ECC390036F140 /* README.md */; };
+		23D2AC99271EDF760036F140 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC98271EDF760036F140 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23D2AC6E271EC8630036F140 /* Bevy iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bevy iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D2AC71271EC8630036F140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D2AC73271EC8630036F140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23D2AC75271EC8630036F140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23D2AC78271EC8630036F140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23D2AC7B271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bevy_iOS_Challenge.xcdatamodel; sourceTree = "<group>"; };
 		23D2AC7D271EC8640036F140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D2AC80271EC8640036F140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D2AC82271EC8640036F140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23D2AC88271ECC390036F140 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		23D2AC98271EDF760036F140 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		23D2AC8E271ED4780036F140 /* Application Screens */ = {
 			isa = PBXGroup;
 			children = (
-				23D2AC75271EC8630036F140 /* ViewController.swift */,
+				23D2AC96271EDF5D0036F140 /* Splash */,
 			);
 			path = "Application Screens";
 			sourceTree = "<group>";
@@ -127,6 +127,22 @@
 				23D2AC7A271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld */,
 			);
 			path = "Core Data Storage";
+			sourceTree = "<group>";
+		};
+		23D2AC96271EDF5D0036F140 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC97271EDF670036F140 /* Controller */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		23D2AC97271EDF670036F140 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC98271EDF760036F140 /* SplashViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,10 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23D2AC76271EC8630036F140 /* ViewController.swift in Sources */,
 				23D2AC7C271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld in Sources */,
 				23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */,
 				23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */,
+				23D2AC99271EDF760036F140 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
