@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27AE271EE6F600639B53 /* BaseURL.swift */; };
+		23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B0271EE73C00639B53 /* AbsolutePath.swift */; };
+		23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B2271EF05100639B53 /* HTTPMethod.swift */; };
+		23AF27B5271EF06C00639B53 /* EndPointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B4271EF06C00639B53 /* EndPointError.swift */; };
+		23AF27B7271EF07C00639B53 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B6271EF07C00639B53 /* EndPoint.swift */; };
+		23AF27B9271EF85800639B53 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B8271EF85800639B53 /* NetworkError.swift */; };
 		23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC71271EC8630036F140 /* AppDelegate.swift */; };
 		23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC73271EC8630036F140 /* SceneDelegate.swift */; };
 		23D2AC79271EC8630036F140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC77271EC8630036F140 /* Main.storyboard */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23AF27AE271EE6F600639B53 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		23AF27B0271EE73C00639B53 /* AbsolutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePath.swift; sourceTree = "<group>"; };
+		23AF27B2271EF05100639B53 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		23AF27B4271EF06C00639B53 /* EndPointError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointError.swift; sourceTree = "<group>"; };
+		23AF27B6271EF07C00639B53 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		23AF27B8271EF85800639B53 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		23D2AC6E271EC8630036F140 /* Bevy iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bevy iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D2AC71271EC8630036F140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D2AC73271EC8630036F140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +53,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23AF27AC271EE6D600639B53 /* Request Manager */ = {
+			isa = PBXGroup;
+			children = (
+				23AF27AD271EE6EA00639B53 /* End Point Core */,
+			);
+			path = "Request Manager";
+			sourceTree = "<group>";
+		};
+		23AF27AD271EE6EA00639B53 /* End Point Core */ = {
+			isa = PBXGroup;
+			children = (
+				23AF27AE271EE6F600639B53 /* BaseURL.swift */,
+				23AF27B0271EE73C00639B53 /* AbsolutePath.swift */,
+				23AF27B2271EF05100639B53 /* HTTPMethod.swift */,
+				23AF27B8271EF85800639B53 /* NetworkError.swift */,
+				23AF27B4271EF06C00639B53 /* EndPointError.swift */,
+				23AF27B6271EF07C00639B53 /* EndPoint.swift */,
+			);
+			path = "End Point Core";
+			sourceTree = "<group>";
+		};
 		23D2AC65271EC8630036F140 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +94,7 @@
 		23D2AC70271EC8630036F140 /* Bevy iOS Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				23AF27AC271EE6D600639B53 /* Request Manager */,
 				23D2AC8A271ED4080036F140 /* Application Delegates */,
 				23D2AC8B271ED4320036F140 /* Configurations */,
 				23D2AC8C271ED4460036F140 /* Resources */,
@@ -218,9 +252,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				23D2AC7C271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld in Sources */,
+				23AF27B5271EF06C00639B53 /* EndPointError.swift in Sources */,
 				23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */,
+				23AF27B7271EF07C00639B53 /* EndPoint.swift in Sources */,
+				23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */,
+				23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */,
 				23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */,
 				23D2AC99271EDF760036F140 /* SplashViewController.swift in Sources */,
+				23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */,
+				23AF27B9271EF85800639B53 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
