@@ -61,16 +61,72 @@
 		23D2AC70271EC8630036F140 /* Bevy iOS Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				23D2AC71271EC8630036F140 /* AppDelegate.swift */,
-				23D2AC73271EC8630036F140 /* SceneDelegate.swift */,
-				23D2AC75271EC8630036F140 /* ViewController.swift */,
-				23D2AC77271EC8630036F140 /* Main.storyboard */,
-				23D2AC7D271EC8640036F140 /* Assets.xcassets */,
-				23D2AC7F271EC8640036F140 /* LaunchScreen.storyboard */,
-				23D2AC82271EC8640036F140 /* Info.plist */,
-				23D2AC7A271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld */,
+				23D2AC8A271ED4080036F140 /* Application Delegates */,
+				23D2AC8B271ED4320036F140 /* Configurations */,
+				23D2AC8C271ED4460036F140 /* Resources */,
+				23D2AC8D271ED4610036F140 /* StoryBoards */,
+				23D2AC8F271ED48D0036F140 /* Persistent Storage */,
+				23D2AC8E271ED4780036F140 /* Application Screens */,
 			);
 			path = "Bevy iOS Challenge";
+			sourceTree = "<group>";
+		};
+		23D2AC8A271ED4080036F140 /* Application Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC71271EC8630036F140 /* AppDelegate.swift */,
+				23D2AC73271EC8630036F140 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegates";
+			sourceTree = "<group>";
+		};
+		23D2AC8B271ED4320036F140 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC82271EC8640036F140 /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		23D2AC8C271ED4460036F140 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC7D271EC8640036F140 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		23D2AC8D271ED4610036F140 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC77271EC8630036F140 /* Main.storyboard */,
+				23D2AC7F271EC8640036F140 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		23D2AC8E271ED4780036F140 /* Application Screens */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC75271EC8630036F140 /* ViewController.swift */,
+			);
+			path = "Application Screens";
+			sourceTree = "<group>";
+		};
+		23D2AC8F271ED48D0036F140 /* Persistent Storage */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC90271ED4E50036F140 /* Core Data Storage */,
+			);
+			path = "Persistent Storage";
+			sourceTree = "<group>";
+		};
+		23D2AC90271ED4E50036F140 /* Core Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				23D2AC7A271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld */,
+			);
+			path = "Core Data Storage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V78H7WRYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bevy iOS Challenge/Info.plist";
+				INFOPLIST_FILE = "Bevy iOS Challenge/Configurations/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -327,7 +383,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V78H7WRYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bevy iOS Challenge/Info.plist";
+				INFOPLIST_FILE = "Bevy iOS Challenge/Configurations/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
