@@ -13,6 +13,9 @@
 		23AF27B5271EF06C00639B53 /* EndPointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B4271EF06C00639B53 /* EndPointError.swift */; };
 		23AF27B7271EF07C00639B53 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B6271EF07C00639B53 /* EndPoint.swift */; };
 		23AF27B9271EF85800639B53 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B8271EF85800639B53 /* NetworkError.swift */; };
+		23AF27BD271EF95600639B53 /* OSLog+Loggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27BC271EF95600639B53 /* OSLog+Loggers.swift */; };
+		23AF27BF271EF96C00639B53 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27BE271EF96C00639B53 /* Encodable+Extension.swift */; };
+		23AF27C1271EF97B00639B53 /* String+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27C0271EF97B00639B53 /* String+Url.swift */; };
 		23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC71271EC8630036F140 /* AppDelegate.swift */; };
 		23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC73271EC8630036F140 /* SceneDelegate.swift */; };
 		23D2AC79271EC8630036F140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC77271EC8630036F140 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		23AF27B4271EF06C00639B53 /* EndPointError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointError.swift; sourceTree = "<group>"; };
 		23AF27B6271EF07C00639B53 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		23AF27B8271EF85800639B53 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		23AF27BC271EF95600639B53 /* OSLog+Loggers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Loggers.swift"; sourceTree = "<group>"; };
+		23AF27BE271EF96C00639B53 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		23AF27C0271EF97B00639B53 /* String+Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Url.swift"; sourceTree = "<group>"; };
 		23D2AC6E271EC8630036F140 /* Bevy iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bevy iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D2AC71271EC8630036F140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D2AC73271EC8630036F140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,24 @@
 			path = "End Point Core";
 			sourceTree = "<group>";
 		};
+		23AF27BA271EF93300639B53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				23AF27BB271EF94500639B53 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		23AF27BB271EF94500639B53 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23AF27BC271EF95600639B53 /* OSLog+Loggers.swift */,
+				23AF27BE271EF96C00639B53 /* Encodable+Extension.swift */,
+				23AF27C0271EF97B00639B53 /* String+Url.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		23D2AC65271EC8630036F140 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +123,7 @@
 				23D2AC8B271ED4320036F140 /* Configurations */,
 				23D2AC8C271ED4460036F140 /* Resources */,
 				23D2AC8D271ED4610036F140 /* StoryBoards */,
+				23AF27BA271EF93300639B53 /* Utilities */,
 				23D2AC8F271ED48D0036F140 /* Persistent Storage */,
 				23D2AC8E271ED4780036F140 /* Application Screens */,
 			);
@@ -255,9 +280,12 @@
 				23AF27B5271EF06C00639B53 /* EndPointError.swift in Sources */,
 				23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */,
 				23AF27B7271EF07C00639B53 /* EndPoint.swift in Sources */,
+				23AF27C1271EF97B00639B53 /* String+Url.swift in Sources */,
 				23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */,
+				23AF27BF271EF96C00639B53 /* Encodable+Extension.swift in Sources */,
 				23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */,
 				23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */,
+				23AF27BD271EF95600639B53 /* OSLog+Loggers.swift in Sources */,
 				23D2AC99271EDF760036F140 /* SplashViewController.swift in Sources */,
 				23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */,
 				23AF27B9271EF85800639B53 /* NetworkError.swift in Sources */,
