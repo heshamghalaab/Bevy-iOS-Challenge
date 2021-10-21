@@ -27,7 +27,11 @@ struct DataResponseHandler: DataResponseHandling {
             return completionHandler(.failure(.error(statusCode: httpResponse.statusCode, data: data)))
         }
         
-        log(responseData: data)
+        // Log data for the end Point
+        if let data = data, let value = String(data: data, encoding: .utf8){
+            os_log("Response For %@ %@", log: .requestsLogger, type: .error, "\(E.self)", value)
+        }
+        
         completionHandler(.success(data))
     }
     
@@ -37,11 +41,5 @@ struct DataResponseHandler: DataResponseHandling {
         case .notConnectedToInternet: return .notConnected
         default: return .generic(error)
         }
-    }
-    
-    func log(responseData data: Data?) {
-        guard let data = data else { return }
-        let dataDict = try? JSONSerialization.jsonObject(with: data, options: [])
-        os_log("Response: %@", log: .requestsLogger, type: .error, "\(String(describing: dataDict))")
     }
 }
