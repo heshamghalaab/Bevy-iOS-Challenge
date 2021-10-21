@@ -18,8 +18,8 @@ Xcode Version 13.0 (13A233)
 - Implement a simple Event Application that display Events queried from a two Wep services, it contains three screens "Splash, Events List and Event Details.". The app should include a robust caching technique.
 
 ## TODO List:
-- [ ] Creating App structure and Adding Splash Screen.
-- [ ] Building Network Layer and adding Events Provider.
+- [x] Creating App structure and Adding Splash Screen.
+- [x] Building Network Layer and adding Events Provider.
 - [ ] Handling Events Screen UI and fetching the data to it.
 - [ ] Handling Events Details Screen UI.
 - [ ] Handling Cashing and Offline Mode.
