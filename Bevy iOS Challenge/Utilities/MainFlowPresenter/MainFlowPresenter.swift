@@ -16,7 +16,7 @@ struct MainFlowPresenter {
     }
     
     func navigate(to controller: UIViewController,
-                  options: UIView.AnimationOptions = [.transitionCrossDissolve]){
+                  options: UIView.AnimationOptions = [.transitionFlipFromRight]){
         clearPresntedControllersIfNeeded()
         setTransition(options: options)
         setRoot(to: controller)

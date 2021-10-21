@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdN-fU-mH9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-Ma-IcB">
                                 <rect key="frame" x="16" y="60" width="219.5" height="42"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Bevy's">
                                         <attributes>
+                                            <color key="NSColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="20" name="AmericanTypewriter-Bold"/>
+                                            <font key="NSOriginalFont" size="20" name="AmericanTypewriter-Bold"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -29,13 +36,16 @@
 IAo
 </string>
                                         <attributes>
+                                            <color key="NSColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="16" name="KohinoorBangla-Semibold"/>
+                                            <font key="NSOriginalFont" size="16" name="KohinoorBangla-Semibold"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Take Home Technical Exercise">
                                         <attributes>
+                                            <color key="NSColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="15" name="AmericanTypewriter-Semibold"/>
-                                            <font key="NSOriginalFont" size="13" name="AmericanTypewriter-Semibold"/>
+                                            <font key="NSOriginalFont" size="15" name="AmericanTypewriter-Semibold"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -57,10 +67,14 @@ IAo
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NdN-fU-mH9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A4G-Bp-cZl"/>
                             <constraint firstItem="ExH-h7-5cy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="B45-pU-eek"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0yK-Ma-IcB" secondAttribute="trailing" constant="16" id="CKO-B3-zXU"/>
+                            <constraint firstItem="NdN-fU-mH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MrZ-e9-9AT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NdN-fU-mH9" secondAttribute="trailing" id="PF7-2r-dJ8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ExH-h7-5cy" secondAttribute="bottom" id="UdA-ah-bKb"/>
                             <constraint firstItem="0yK-Ma-IcB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hYr-Kh-ete"/>
+                            <constraint firstItem="0yK-Ma-IcB" firstAttribute="bottom" secondItem="NdN-fU-mH9" secondAttribute="bottom" constant="-16" id="mkg-cl-WNM"/>
                             <constraint firstItem="0yK-Ma-IcB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="uKt-0I-VYF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ExH-h7-5cy" secondAttribute="trailing" constant="16" id="zr1-e6-VY8"/>
                         </constraints>
@@ -69,6 +83,83 @@ IAo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101" y="27"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="CPs-SP-C5B">
+            <objects>
+                <viewController storyboardIdentifier="EventsViewController" id="DEJ-is-E4J" customClass="EventsViewController" customModule="Bevy_iOS_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wXM-eB-U7J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iay-Wp-A1i">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uju-td-Iif"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oi1-W3-wVe">
+                                    <size key="itemSize" width="91" height="45"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="85I-xp-mLD">
+                                        <rect key="frame" x="0.0" y="2.5" width="91" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YGM-bS-gyq">
+                                            <rect key="frame" x="0.0" y="0.0" width="91" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="91" height="45"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="osv-kp-83G">
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kxD-f3-MjK"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="osv-kp-83G" firstAttribute="top" secondItem="iay-Wp-A1i" secondAttribute="bottom" id="6se-Hp-2bu"/>
+                            <constraint firstItem="kxD-f3-MjK" firstAttribute="bottom" secondItem="osv-kp-83G" secondAttribute="bottom" id="CCB-hY-q5o"/>
+                            <constraint firstItem="kxD-f3-MjK" firstAttribute="trailing" secondItem="osv-kp-83G" secondAttribute="trailing" id="FJZ-RK-BCG"/>
+                            <constraint firstItem="kxD-f3-MjK" firstAttribute="trailing" secondItem="iay-Wp-A1i" secondAttribute="trailing" id="YFR-SM-751"/>
+                            <constraint firstItem="iay-Wp-A1i" firstAttribute="top" secondItem="kxD-f3-MjK" secondAttribute="top" id="ZxQ-oy-Jte"/>
+                            <constraint firstItem="iay-Wp-A1i" firstAttribute="leading" secondItem="kxD-f3-MjK" secondAttribute="leading" id="fSY-bx-aNc"/>
+                            <constraint firstItem="osv-kp-83G" firstAttribute="leading" secondItem="kxD-f3-MjK" secondAttribute="leading" id="yK0-oU-aJX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events" id="cRp-Ev-eDX"/>
+                    <connections>
+                        <outlet property="eventsTableView" destination="osv-kp-83G" id="LtF-kv-FrB"/>
+                        <outlet property="eventsTypesCollectionView" destination="iay-Wp-A1i" id="A6v-Ic-1DF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5S-xS-q5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="26.785714285714285"/>
+        </scene>
+        <!--Events Navigation Controller-->
+        <scene sceneID="3Ey-MS-2Wd">
+            <objects>
+                <navigationController storyboardIdentifier="EventsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="vUj-6H-Ou2" customClass="EventsNavigationController" customModule="Bevy_iOS_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XAs-jt-KwA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DEJ-is-E4J" kind="relationship" relationship="rootViewController" id="QjF-16-NOu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vE0-8V-oY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.5797101449275" y="26.785714285714285"/>
         </scene>
     </scenes>
 </document>
