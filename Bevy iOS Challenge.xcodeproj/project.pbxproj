@@ -18,6 +18,15 @@
 		23028A8C27213B67009EE8DA /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A8B27213B67009EE8DA /* Storyboard.swift */; };
 		23028A8F27213C48009EE8DA /* MainFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A8E27213C48009EE8DA /* MainFlowPresenter.swift */; };
 		23028A9327213E57009EE8DA /* EventsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A9227213E57009EE8DA /* EventsNavigationController.swift */; };
+		23028A96272144C8009EE8DA /* EventTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A94272144C8009EE8DA /* EventTypeCollectionViewCell.swift */; };
+		23028A97272144C8009EE8DA /* EventTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23028A95272144C8009EE8DA /* EventTypeCollectionViewCell.xib */; };
+		23028A99272144E5009EE8DA /* UICollectionViewCell+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A98272144E5009EE8DA /* UICollectionViewCell+identifier.swift */; };
+		23028A9E27214557009EE8DA /* EventsTypesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A9D27214557009EE8DA /* EventsTypesDataSource.swift */; };
+		23028AA027214565009EE8DA /* EventsTypesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A9F27214565009EE8DA /* EventsTypesDelegate.swift */; };
+		23028AA327215610009EE8DA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AA227215610009EE8DA /* LoadingView.swift */; };
+		23028AA727215E27009EE8DA /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AA627215E27009EE8DA /* Alertable.swift */; };
+		23028AA927216109009EE8DA /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AA827216109009EE8DA /* UIColor+CustomColors.swift */; };
+		23028AAB27216144009EE8DA /* UIView+GradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AAA27216144009EE8DA /* UIView+GradientColor.swift */; };
 		23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27AE271EE6F600639B53 /* BaseURL.swift */; };
 		23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B0271EE73C00639B53 /* AbsolutePath.swift */; };
 		23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B2271EF05100639B53 /* HTTPMethod.swift */; };
@@ -63,6 +72,15 @@
 		23028A8B27213B67009EE8DA /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		23028A8E27213C48009EE8DA /* MainFlowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowPresenter.swift; sourceTree = "<group>"; };
 		23028A9227213E57009EE8DA /* EventsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNavigationController.swift; sourceTree = "<group>"; };
+		23028A94272144C8009EE8DA /* EventTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		23028A95272144C8009EE8DA /* EventTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		23028A98272144E5009EE8DA /* UICollectionViewCell+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+identifier.swift"; sourceTree = "<group>"; };
+		23028A9D27214557009EE8DA /* EventsTypesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTypesDataSource.swift; sourceTree = "<group>"; };
+		23028A9F27214565009EE8DA /* EventsTypesDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTypesDelegate.swift; sourceTree = "<group>"; };
+		23028AA227215610009EE8DA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		23028AA627215E27009EE8DA /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		23028AA827216109009EE8DA /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
+		23028AAA27216144009EE8DA /* UIView+GradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GradientColor.swift"; sourceTree = "<group>"; };
 		23AF27AE271EE6F600639B53 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		23AF27B0271EE73C00639B53 /* AbsolutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePath.swift; sourceTree = "<group>"; };
 		23AF27B2271EF05100639B53 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -112,6 +130,9 @@
 		23028A7A272138F4009EE8DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				23028A9C27214525009EE8DA /* Cells */,
+				23028A9A27214513009EE8DA /* DataSources */,
+				23028A9B2721451E009EE8DA /* Delegates */,
 				23028A9227213E57009EE8DA /* EventsNavigationController.swift */,
 				23028A7D27213914009EE8DA /* EventsViewController.swift */,
 			);
@@ -131,7 +152,7 @@
 		23028A7C272138FF009EE8DA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				23028A8327213943009EE8DA /* EventTableViewCell.swift */,
+				23028A95272144C8009EE8DA /* EventTypeCollectionViewCell.xib */,
 				23028A8427213943009EE8DA /* EventTableViewCell.xib */,
 			);
 			path = View;
@@ -143,6 +164,47 @@
 				23028A8E27213C48009EE8DA /* MainFlowPresenter.swift */,
 			);
 			path = MainFlowPresenter;
+			sourceTree = "<group>";
+		};
+		23028A9A27214513009EE8DA /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				23028A9D27214557009EE8DA /* EventsTypesDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		23028A9B2721451E009EE8DA /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				23028A9F27214565009EE8DA /* EventsTypesDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		23028A9C27214525009EE8DA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				23028A94272144C8009EE8DA /* EventTypeCollectionViewCell.swift */,
+				23028A8327213943009EE8DA /* EventTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		23028AA127215607009EE8DA /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				23028AA227215610009EE8DA /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		23028AA527215E20009EE8DA /* Alertable */ = {
+			isa = PBXGroup;
+			children = (
+				23028AA627215E27009EE8DA /* Alertable.swift */,
+			);
+			path = Alertable;
 			sourceTree = "<group>";
 		};
 		23AF27AC271EE6D600639B53 /* Request Manager */ = {
@@ -175,6 +237,8 @@
 		23AF27BA271EF93300639B53 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				23028AA527215E20009EE8DA /* Alertable */,
+				23028AA127215607009EE8DA /* LoadingView */,
 				23028A8D27213C40009EE8DA /* MainFlowPresenter */,
 				23AF27BB271EF94500639B53 /* Extensions */,
 				23AF27DD271F091600639B53 /* Providers */,
@@ -190,6 +254,9 @@
 				23AF27BE271EF96C00639B53 /* Encodable+Extension.swift */,
 				23AF27C0271EF97B00639B53 /* String+Url.swift */,
 				23028A8927213B3B009EE8DA /* UITableViewCell+identifier.swift */,
+				23028A98272144E5009EE8DA /* UICollectionViewCell+identifier.swift */,
+				23028AA827216109009EE8DA /* UIColor+CustomColors.swift */,
+				23028AAA27216144009EE8DA /* UIView+GradientColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -426,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23028A8627213943009EE8DA /* EventTableViewCell.xib in Resources */,
+				23028A97272144C8009EE8DA /* EventTypeCollectionViewCell.xib in Resources */,
 				23D2AC81271EC8640036F140 /* LaunchScreen.storyboard in Resources */,
 				23D2AC7E271EC8640036F140 /* Assets.xcassets in Resources */,
 				23D2AC89271ECC3A0036F140 /* README.md in Resources */,
@@ -445,19 +513,26 @@
 				23028A822721392E009EE8DA /* EventViewModel.swift in Sources */,
 				23AF27B5271EF06C00639B53 /* EndPointError.swift in Sources */,
 				23028A7E27213914009EE8DA /* EventsViewController.swift in Sources */,
+				23028AA327215610009EE8DA /* LoadingView.swift in Sources */,
 				23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */,
 				23AF27C9271EFC9100639B53 /* DataResponseHandling.swift in Sources */,
 				23AF27B7271EF07C00639B53 /* EndPoint.swift in Sources */,
 				23AF27C1271EF97B00639B53 /* String+Url.swift in Sources */,
 				23028A79272135F8009EE8DA /* EmptyParameters.swift in Sources */,
 				23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */,
+				23028A99272144E5009EE8DA /* UICollectionViewCell+identifier.swift in Sources */,
 				23AF27DF271F092900639B53 /* EventsProviding.swift in Sources */,
+				23028AA927216109009EE8DA /* UIColor+CustomColors.swift in Sources */,
+				23028AA727215E27009EE8DA /* Alertable.swift in Sources */,
+				23028AA027214565009EE8DA /* EventsTypesDelegate.swift in Sources */,
 				23028A9327213E57009EE8DA /* EventsNavigationController.swift in Sources */,
 				23028A8827213A03009EE8DA /* EventTypeViewModel.swift in Sources */,
+				23028AAB27216144009EE8DA /* UIView+GradientColor.swift in Sources */,
 				23AF27CE271EFF7100639B53 /* DataResponseDecoding.swift in Sources */,
 				23AF27BF271EF96C00639B53 /* Encodable+Extension.swift in Sources */,
 				23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */,
 				23028A8A27213B3B009EE8DA /* UITableViewCell+identifier.swift in Sources */,
+				23028A9E27214557009EE8DA /* EventsTypesDataSource.swift in Sources */,
 				23AF27E5271F0A2000639B53 /* Event.swift in Sources */,
 				23028A8027213920009EE8DA /* EventsViewModel.swift in Sources */,
 				23028A8F27213C48009EE8DA /* MainFlowPresenter.swift in Sources */,
@@ -467,6 +542,7 @@
 				23AF27CB271EFC9F00639B53 /* DataResponseHandler.swift in Sources */,
 				23AF27C6271EFC6700639B53 /* URLRequestBuilder.swift in Sources */,
 				23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */,
+				23028A96272144C8009EE8DA /* EventTypeCollectionViewCell.swift in Sources */,
 				23AF27D7271EFFEC00639B53 /* DataRequester.swift in Sources */,
 				23028A8527213943009EE8DA /* EventTableViewCell.swift in Sources */,
 				23AF27D3271EFFD100639B53 /* DataRequesting.swift in Sources */,

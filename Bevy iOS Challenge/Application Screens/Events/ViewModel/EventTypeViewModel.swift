@@ -8,6 +8,7 @@
 import Foundation
 
 protocol EventTypeViewModelOutputs {
+    var eventTypeText: String { get }
 }
 
 protocol EventTypeViewModelProtocol: AnyObject {
@@ -28,4 +29,5 @@ class EventTypeViewModel: EventTypeViewModelOutputs, EventTypeViewModelProtocol 
     }
     
     /// OutPuts
+    var eventTypeText: String { eventType.name }
 }
