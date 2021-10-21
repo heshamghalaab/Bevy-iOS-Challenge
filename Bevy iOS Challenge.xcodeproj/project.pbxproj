@@ -14,6 +14,9 @@
 		23028A8527213943009EE8DA /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A8327213943009EE8DA /* EventTableViewCell.swift */; };
 		23028A8627213943009EE8DA /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23028A8427213943009EE8DA /* EventTableViewCell.xib */; };
 		23028A8827213A03009EE8DA /* EventTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A8727213A03009EE8DA /* EventTypeViewModel.swift */; };
+		23028A8A27213B3B009EE8DA /* UITableViewCell+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A8927213B3B009EE8DA /* UITableViewCell+identifier.swift */; };
+		23028A8C27213B67009EE8DA /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A8B27213B67009EE8DA /* Storyboard.swift */; };
+		23028A8F27213C48009EE8DA /* MainFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028A8E27213C48009EE8DA /* MainFlowPresenter.swift */; };
 		23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27AE271EE6F600639B53 /* BaseURL.swift */; };
 		23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B0271EE73C00639B53 /* AbsolutePath.swift */; };
 		23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B2271EF05100639B53 /* HTTPMethod.swift */; };
@@ -55,6 +58,9 @@
 		23028A8327213943009EE8DA /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		23028A8427213943009EE8DA /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		23028A8727213A03009EE8DA /* EventTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeViewModel.swift; sourceTree = "<group>"; };
+		23028A8927213B3B009EE8DA /* UITableViewCell+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+identifier.swift"; sourceTree = "<group>"; };
+		23028A8B27213B67009EE8DA /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		23028A8E27213C48009EE8DA /* MainFlowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowPresenter.swift; sourceTree = "<group>"; };
 		23AF27AE271EE6F600639B53 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		23AF27B0271EE73C00639B53 /* AbsolutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePath.swift; sourceTree = "<group>"; };
 		23AF27B2271EF05100639B53 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -128,6 +134,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		23028A8D27213C40009EE8DA /* MainFlowPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				23028A8E27213C48009EE8DA /* MainFlowPresenter.swift */,
+			);
+			path = MainFlowPresenter;
+			sourceTree = "<group>";
+		};
 		23AF27AC271EE6D600639B53 /* Request Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +172,7 @@
 		23AF27BA271EF93300639B53 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				23028A8D27213C40009EE8DA /* MainFlowPresenter */,
 				23AF27BB271EF94500639B53 /* Extensions */,
 				23AF27DD271F091600639B53 /* Providers */,
 				23D2AC8F271ED48D0036F140 /* Persistent Storage */,
@@ -171,6 +186,7 @@
 				23AF27BC271EF95600639B53 /* OSLog+Loggers.swift */,
 				23AF27BE271EF96C00639B53 /* Encodable+Extension.swift */,
 				23AF27C0271EF97B00639B53 /* String+Url.swift */,
+				23028A8927213B3B009EE8DA /* UITableViewCell+identifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +316,7 @@
 		23D2AC8D271ED4610036F140 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				23028A8B27213B67009EE8DA /* Storyboard.swift */,
 				23D2AC77271EC8630036F140 /* Main.storyboard */,
 				23D2AC7F271EC8640036F140 /* LaunchScreen.storyboard */,
 			);
@@ -436,8 +453,10 @@
 				23AF27CE271EFF7100639B53 /* DataResponseDecoding.swift in Sources */,
 				23AF27BF271EF96C00639B53 /* Encodable+Extension.swift in Sources */,
 				23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */,
+				23028A8A27213B3B009EE8DA /* UITableViewCell+identifier.swift in Sources */,
 				23AF27E5271F0A2000639B53 /* Event.swift in Sources */,
 				23028A8027213920009EE8DA /* EventsViewModel.swift in Sources */,
+				23028A8F27213C48009EE8DA /* MainFlowPresenter.swift in Sources */,
 				23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */,
 				23AF27BD271EF95600639B53 /* OSLog+Loggers.swift in Sources */,
 				23D2AC99271EDF760036F140 /* SplashViewController.swift in Sources */,
@@ -450,6 +469,7 @@
 				23AF27D5271EFFDE00639B53 /* URLSessionRequesting.swift in Sources */,
 				23AF27D0271EFF8100639B53 /* DataResponseDecoder.swift in Sources */,
 				23AF27E7271F0A8F00639B53 /* EventsParameters.swift in Sources */,
+				23028A8C27213B67009EE8DA /* Storyboard.swift in Sources */,
 				23AF27B9271EF85800639B53 /* NetworkError.swift in Sources */,
 				23AF27C4271EFC5700639B53 /* URLRequestBuilding.swift in Sources */,
 				23AF27D9271F019B00639B53 /* RequestManager.swift in Sources */,
