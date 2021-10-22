@@ -21,6 +21,6 @@ Xcode Version 13.0 (13A233)
 - [x] Creating App structure and Adding Splash Screen.
 - [x] Building Network Layer and adding Events Provider.
 - [x] Handling Events Screen UI and fetching the data to it.
-- [ ] Handling Events Details Screen UI.
+- [x] Handling Events Details Screen UI.
 - [ ] Handling Cashing and Offline Mode.
 - [ ] Writing unit tests.
