@@ -11,7 +11,7 @@ protocol EventViewModelOutputs {
     var eventName: String { get }
     var eventDescription: String { get }
     var eventDate: String { get }
-    var eventImageURLValue: String { get }
+    var eventImageURL: URL? { get }
 }
 
 protocol EventViewModelProtocol: AnyObject {
@@ -35,5 +35,5 @@ class EventViewModel: EventViewModelOutputs, EventViewModelProtocol {
     var eventName: String { event.name }
     var eventDescription: String { event.description }
     var eventDate: String { event.startDate }
-    var eventImageURLValue: String { event.cover }
+    var eventImageURL: URL? { URL(string: event.cover) }
 }

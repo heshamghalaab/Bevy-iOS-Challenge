@@ -52,6 +52,7 @@
 		23AF27E3271F0A0400639B53 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27E2271F0A0400639B53 /* EventType.swift */; };
 		23AF27E5271F0A2000639B53 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27E4271F0A2000639B53 /* Event.swift */; };
 		23AF27E7271F0A8F00639B53 /* EventsParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27E6271F0A8F00639B53 /* EventsParameters.swift */; };
+		23BDF5292722F1CF008FADFB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 23BDF5282722F1CF008FADFB /* SDWebImage */; };
 		23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC71271EC8630036F140 /* AppDelegate.swift */; };
 		23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC73271EC8630036F140 /* SceneDelegate.swift */; };
 		23D2AC79271EC8630036F140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC77271EC8630036F140 /* Main.storyboard */; };
@@ -125,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BDF5292722F1CF008FADFB /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +458,9 @@
 			dependencies = (
 			);
 			name = "Bevy iOS Challenge";
+			packageProductDependencies = (
+				23BDF5282722F1CF008FADFB /* SDWebImage */,
+			);
 			productName = "Bevy iOS Challenge";
 			productReference = 23D2AC6E271EC8630036F140 /* Bevy iOS Challenge.app */;
 			productType = "com.apple.product-type.application";
@@ -484,6 +489,9 @@
 				Base,
 			);
 			mainGroup = 23D2AC65271EC8630036F140;
+			packageReferences = (
+				23BDF5272722F1CF008FADFB /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 23D2AC6F271EC8630036F140 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -782,6 +790,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23BDF5272722F1CF008FADFB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23BDF5282722F1CF008FADFB /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23BDF5272722F1CF008FADFB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		23D2AC7A271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld */ = {

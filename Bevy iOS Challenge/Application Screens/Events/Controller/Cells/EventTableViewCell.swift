@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class EventTableViewCell: UITableViewCell {
 
@@ -22,6 +23,9 @@ class EventTableViewCell: UITableViewCell {
         self.eventNameLabel.text = viewModel.outputs.eventName
         self.eventDescriptionLabel.text = viewModel.outputs.eventDescription
         self.eventDateLabel.text = viewModel.outputs.eventDate
+        self.eventImageView.sd_setImage(
+            with: viewModel.outputs.eventImageURL,
+            placeholderImage: UIImage(systemName: "calendar.circle"))
     }
     
 }
