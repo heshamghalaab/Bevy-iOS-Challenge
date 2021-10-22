@@ -20,7 +20,7 @@ Xcode Version 13.0 (13A233)
 ## TODO List:
 - [x] Creating App structure and Adding Splash Screen.
 - [x] Building Network Layer and adding Events Provider.
-- [ ] Handling Events Screen UI and fetching the data to it.
+- [x] Handling Events Screen UI and fetching the data to it.
 - [ ] Handling Events Details Screen UI.
 - [ ] Handling Cashing and Offline Mode.
 - [ ] Writing unit tests.
