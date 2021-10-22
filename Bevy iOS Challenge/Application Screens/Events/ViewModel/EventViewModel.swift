@@ -8,6 +8,10 @@
 import Foundation
 
 protocol EventViewModelOutputs {
+    var eventName: String { get }
+    var eventDescription: String { get }
+    var eventDate: String { get }
+    var eventImageURLValue: String { get }
 }
 
 protocol EventViewModelProtocol: AnyObject {
@@ -28,5 +32,8 @@ class EventViewModel: EventViewModelOutputs, EventViewModelProtocol {
     }
         
     /// OutPuts
-
+    var eventName: String { event.name }
+    var eventDescription: String { event.description }
+    var eventDate: String { event.startDate }
+    var eventImageURLValue: String { event.cover }
 }

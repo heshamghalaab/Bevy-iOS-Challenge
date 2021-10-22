@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 class EventsTypesDelegate: NSObject, UICollectionViewDelegate{
     
     let viewModel: EventsViewModelProtocol
