@@ -39,9 +39,17 @@ struct EventsProvider: EventsProviding {
             parameters: parameters, httpMethod: .get, headers: [:])
         requestManager.request(from: endPoint) { result in
             switch result{
-            case .success(let response): completion(.success(response))
+            case .success(var response):
+                self.makeEventsIdsUnique(eventType: eventType, page: page, response: &response)
+                completion(.success(response))
             case .failure(let error): completion(.failure(error))
             }
+        }
+    }
+    
+    private func makeEventsIdsUnique(eventType: String, page: Int, response: inout [Event]){
+        for index in response.indices{
+            response[index].makeEventIdUnique(withEventType: eventType, page: page)
         }
     }
 }
