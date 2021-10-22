@@ -53,6 +53,8 @@
 		23AF27E5271F0A2000639B53 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27E4271F0A2000639B53 /* Event.swift */; };
 		23AF27E7271F0A8F00639B53 /* EventsParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27E6271F0A8F00639B53 /* EventsParameters.swift */; };
 		23BDF5292722F1CF008FADFB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 23BDF5282722F1CF008FADFB /* SDWebImage */; };
+		23BDF52E2722F570008FADFB /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF52D2722F570008FADFB /* EventDetailsViewController.swift */; };
+		23BDF5302722F579008FADFB /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF52F2722F579008FADFB /* EventDetailsViewModel.swift */; };
 		23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC71271EC8630036F140 /* AppDelegate.swift */; };
 		23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC73271EC8630036F140 /* SceneDelegate.swift */; };
 		23D2AC79271EC8630036F140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC77271EC8630036F140 /* Main.storyboard */; };
@@ -109,6 +111,8 @@
 		23AF27E2271F0A0400639B53 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		23AF27E4271F0A2000639B53 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		23AF27E6271F0A8F00639B53 /* EventsParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsParameters.swift; sourceTree = "<group>"; };
+		23BDF52D2722F570008FADFB /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		23BDF52F2722F579008FADFB /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
 		23D2AC6E271EC8630036F140 /* Bevy iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bevy iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D2AC71271EC8630036F140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D2AC73271EC8630036F140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -335,6 +339,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		23BDF52A2722F508008FADFB /* EventDetails */ = {
+			isa = PBXGroup;
+			children = (
+				23BDF52C2722F51A008FADFB /* ViewModel */,
+				23BDF52B2722F515008FADFB /* Controller */,
+			);
+			path = EventDetails;
+			sourceTree = "<group>";
+		};
+		23BDF52B2722F515008FADFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23BDF52D2722F570008FADFB /* EventDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23BDF52C2722F51A008FADFB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				23BDF52F2722F579008FADFB /* EventDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		23D2AC65271EC8630036F140 = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +435,7 @@
 			children = (
 				23D2AC96271EDF5D0036F140 /* Splash */,
 				23AF27E0271F09E400639B53 /* Events */,
+				23BDF52A2722F508008FADFB /* EventDetails */,
 			);
 			path = "Application Screens";
 			sourceTree = "<group>";
@@ -541,6 +571,7 @@
 				23028AA027214565009EE8DA /* EventsTypesDelegate.swift in Sources */,
 				23028A9327213E57009EE8DA /* EventsNavigationController.swift in Sources */,
 				23028A8827213A03009EE8DA /* EventTypeViewModel.swift in Sources */,
+				23BDF5302722F579008FADFB /* EventDetailsViewModel.swift in Sources */,
 				23028AAB27216144009EE8DA /* UIView+GradientColor.swift in Sources */,
 				23AF27CE271EFF7100639B53 /* DataResponseDecoding.swift in Sources */,
 				23028AAD2721A890009EE8DA /* EventsDataSource.swift in Sources */,
@@ -558,6 +589,7 @@
 				23AF27C6271EFC6700639B53 /* URLRequestBuilder.swift in Sources */,
 				23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */,
 				23028A96272144C8009EE8DA /* EventTypeCollectionViewCell.swift in Sources */,
+				23BDF52E2722F570008FADFB /* EventDetailsViewController.swift in Sources */,
 				23AF27D7271EFFEC00639B53 /* DataRequester.swift in Sources */,
 				23028A8527213943009EE8DA /* EventTableViewCell.swift in Sources */,
 				23AF27D3271EFFD100639B53 /* DataRequesting.swift in Sources */,

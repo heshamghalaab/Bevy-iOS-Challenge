@@ -86,6 +86,10 @@ class EventsViewController: UIViewController, Alertable {
         viewModel.outputs.failureAlert = { [weak self] message in
             self?.showAlert(message: message)
         }
+        
+        viewModel.outputs.performEventDetailsNavigation = { [weak self] eventDetailsViewModel in
+            self?.performEventDetailsNavigation(eventDetailsViewModel)
+        }
     }
     
     private func updateLoading(_ loading: EventsFetchingType?){
@@ -104,6 +108,12 @@ class EventsViewController: UIViewController, Alertable {
             LoadingView.hide()
             eventsTableView.tableFooterView = nil
         }
+    }
+    
+    private func performEventDetailsNavigation(_ eventDetailsViewModel: EventDetailsViewModelProtocol){
+        let controller = EventDetailsViewController.instantiate(from: .main)
+        controller.viewModel = eventDetailsViewModel
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     /// Handling UI

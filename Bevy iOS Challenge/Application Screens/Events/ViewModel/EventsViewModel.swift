@@ -32,6 +32,7 @@ protocol EventsViewModelOutputs {
     var numberOfEvents: Int { get }
     
     var selectedEventType: EventType? { get }
+    var performEventDetailsNavigation: ( (EventDetailsViewModelProtocol) -> Void )? { get set }
 }
 
 enum EventsFetchingType {
@@ -150,7 +151,8 @@ class EventsViewModel: EventsViewModelInputs, EventsViewModelOutputs, EventsView
     }
     
     func selectEvent(atRow row: Int){
-        // TODO: Perform Navigation to Event details.
+        let viewModel = EventDetailsViewModel(event: self.events[row])
+        performEventDetailsNavigation?(viewModel)
     }
     
     func nextEventsIfNeeded(at row: Int){
@@ -170,4 +172,5 @@ class EventsViewModel: EventsViewModelInputs, EventsViewModelOutputs, EventsView
     var numberOfEvents: Int { events.count }
     
     var selectedEventType: EventType? = nil
+    var performEventDetailsNavigation: ( (EventDetailsViewModelProtocol) -> Void )?
 }
