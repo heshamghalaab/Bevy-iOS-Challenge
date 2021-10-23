@@ -68,7 +68,12 @@ class EventsViewModel: EventsViewModelInputs, EventsViewModelOutputs, EventsView
     /// Inputs
     func getEventsTypes(){
         showLoading?(.intialize)
-        provider.eventsTypes { [weak self] result in
+        provider.eventsTypes(cached: { cachedEventsTypes in
+            print("CACHED EVENTS TYPES: \(cachedEventsTypes.count)")
+            print(cachedEventsTypes)
+            
+        }, completion: { [weak self] result in
+            
             guard let self = self else { return }
             self.showLoading?(.none)
             
@@ -84,18 +89,22 @@ class EventsViewModel: EventsViewModelInputs, EventsViewModelOutputs, EventsView
                 self.reloadEventsTypesData?()
                 self.getEvents(fetchingType: .intialize)
             }
-        }
+        })
     }
     
     func getEvents(fetchingType: EventsFetchingType){
-        guard let eventTypeId = selectedEventType?.id else { return }
+        guard let eventType = selectedEventType else { return }
         guard !isGettingEvents else { return }
         
         self.showLoading?(fetchingType)
         self.isGettingEvents = true
         let page = getPage(for: fetchingType)
         
-        provider.events(eventType: eventTypeId, page: page) { [weak self] result in
+        provider.events(eventType: eventType, page: page, cached: { cachedEvents in
+            print("CACHED EVENTS: \(cachedEvents.count)")
+            print(cachedEvents)
+            
+        }, completion: { [weak self] result in
             guard let self = self else { return }
             switch result{
             case .failure(let error):
@@ -111,7 +120,7 @@ class EventsViewModel: EventsViewModelInputs, EventsViewModelOutputs, EventsView
             
             self.showLoading?(.none)
             self.isGettingEvents = false
-        }
+        })
     }
     
     private func getPage(for fetchingType: EventsFetchingType) -> Int{

@@ -8,42 +8,71 @@
 import Foundation
 
 protocol EventsProviding {
-    func eventsTypes(completion: @escaping (Result<[EventType], Error>) -> Void)
-    func events(eventType: String, page: Int, completion: @escaping (Result<[Event], Error>) -> Void)
+    func eventsTypes(cached: @escaping ([EventType]) -> Void,
+                     completion: @escaping (Result<[EventType], Error>) -> Void)
+    func events(eventType: EventType, page: Int,
+                cached: @escaping ([Event]) -> Void,
+                completion: @escaping (Result<[Event], Error>) -> Void)
 }
 
 struct EventsProvider: EventsProviding {
 
     private let requestManager: CanRequestFeeds
-
-    init(requestManager: CanRequestFeeds = RequestManager()) {
+    private let cache: EventsStorage
+    
+    init(requestManager: CanRequestFeeds = RequestManager(),
+         cache: EventsStorage = CoreDataEventsStorage()) {
         self.requestManager = requestManager
+        self.cache = cache
     }
 
-    func eventsTypes(completion: @escaping (Result<[EventType], Error>) -> Void){
-        let endPoint = RequestEndPoint<[EventType], EmptyParameters>(
-            baseURL: .eventtusChanllenge, absolutePath: .eventtusChanllenge(.eventTypes),
-            parameters: EmptyParameters(), httpMethod: .get, headers: [:])
-        requestManager.request(from: endPoint) { result in
-            switch result{
-            case .success(let response): completion(.success(response))
-            case .failure(let error): completion(.failure(error))
+    func eventsTypes(cached: @escaping ([EventType]) -> Void,
+                     completion: @escaping (Result<[EventType], Error>) -> Void){
+        
+        cache.getTypes { result in
+            if case let .success(types) = result {
+                cached(types ?? [])
+            }
+            
+            let endPoint = RequestEndPoint<[EventType], EmptyParameters>(
+                baseURL: .eventtusChanllenge, absolutePath: .eventtusChanllenge(.eventTypes),
+                parameters: EmptyParameters(), httpMethod: .get, headers: [:])
+            requestManager.request(from: endPoint) { result in
+                switch result{
+                case .success(let response):
+                    completion(.success(response))
+                    self.cache.save(eventTypes: response)
+                    
+                case .failure(let error): completion(.failure(error))
+                }
             }
         }
     }
     
-    func events(eventType: String, page: Int, completion: @escaping (Result<[Event], Error>) -> Void){
-        let parameters = EventsParameters(eventType: eventType, page: page)
-        let endPoint = RequestEndPoint<[Event], EventsParameters>(
-            baseURL: .eventtusChanllenge, absolutePath: .eventtusChanllenge(.events),
-            parameters: parameters, httpMethod: .get, headers: [:])
-        requestManager.request(from: endPoint) { result in
-            switch result{
-            case .success(var response):
-                self.makeEventsIdsUnique(eventType: eventType, page: page, response: &response)
-                completion(.success(response))
-            case .failure(let error): completion(.failure(error))
+    func events(eventType: EventType, page: Int,
+                cached: @escaping ([Event]) -> Void,
+                completion: @escaping (Result<[Event], Error>) -> Void){
+        cache.getEvents(forEventType: eventType) { result in
+            if case let .success(events) = result { cached(events ?? []) }
+            
+            
+            let parameters = EventsParameters(eventType: eventType.id, page: page)
+            let endPoint = RequestEndPoint<[Event], EventsParameters>(
+                baseURL: .eventtusChanllenge, absolutePath: .eventtusChanllenge(.events),
+                parameters: parameters, httpMethod: .get, headers: [:])
+            requestManager.request(from: endPoint) { result in
+                switch result{
+                case .success(var response):
+                    self.makeEventsIdsUnique(eventType: eventType.name, page: page, response: &response)
+                    
+                    // will save only if it is the first page.
+                    if page == 1{ self.cache.save(events: response, forEventType: eventType) }
+                    
+                    completion(.success(response))
+                case .failure(let error): completion(.failure(error))
+                }
             }
+            
         }
     }
     

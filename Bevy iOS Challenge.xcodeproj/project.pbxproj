@@ -29,6 +29,7 @@
 		23028AAB27216144009EE8DA /* UIView+GradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AAA27216144009EE8DA /* UIView+GradientColor.swift */; };
 		23028AAD2721A890009EE8DA /* EventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AAC2721A890009EE8DA /* EventsDataSource.swift */; };
 		23028AAF2721A89D009EE8DA /* EventsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AAE2721A89D009EE8DA /* EventsDelegate.swift */; };
+		23805DE82723EA9A005E6881 /* Entity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DE72723EA9A005E6881 /* Entity+Mapping.swift */; };
 		23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27AE271EE6F600639B53 /* BaseURL.swift */; };
 		23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B0271EE73C00639B53 /* AbsolutePath.swift */; };
 		23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B2271EF05100639B53 /* HTTPMethod.swift */; };
@@ -55,6 +56,9 @@
 		23BDF5292722F1CF008FADFB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 23BDF5282722F1CF008FADFB /* SDWebImage */; };
 		23BDF52E2722F570008FADFB /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF52D2722F570008FADFB /* EventDetailsViewController.swift */; };
 		23BDF5302722F579008FADFB /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF52F2722F579008FADFB /* EventDetailsViewModel.swift */; };
+		23BDF53227231220008FADFB /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF53127231220008FADFB /* CoreDataStorage.swift */; };
+		23BDF5392723238F008FADFB /* EventsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF5382723238F008FADFB /* EventsStorage.swift */; };
+		23BDF53B2723246C008FADFB /* CoreDataEventsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BDF53A2723246C008FADFB /* CoreDataEventsStorage.swift */; };
 		23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC71271EC8630036F140 /* AppDelegate.swift */; };
 		23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC73271EC8630036F140 /* SceneDelegate.swift */; };
 		23D2AC79271EC8630036F140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D2AC77271EC8630036F140 /* Main.storyboard */; };
@@ -88,6 +92,7 @@
 		23028AAA27216144009EE8DA /* UIView+GradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GradientColor.swift"; sourceTree = "<group>"; };
 		23028AAC2721A890009EE8DA /* EventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataSource.swift; sourceTree = "<group>"; };
 		23028AAE2721A89D009EE8DA /* EventsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDelegate.swift; sourceTree = "<group>"; };
+		23805DE72723EA9A005E6881 /* Entity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Mapping.swift"; sourceTree = "<group>"; };
 		23AF27AE271EE6F600639B53 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		23AF27B0271EE73C00639B53 /* AbsolutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePath.swift; sourceTree = "<group>"; };
 		23AF27B2271EF05100639B53 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -113,6 +118,9 @@
 		23AF27E6271F0A8F00639B53 /* EventsParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsParameters.swift; sourceTree = "<group>"; };
 		23BDF52D2722F570008FADFB /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		23BDF52F2722F579008FADFB /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
+		23BDF53127231220008FADFB /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		23BDF5382723238F008FADFB /* EventsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsStorage.swift; sourceTree = "<group>"; };
+		23BDF53A2723246C008FADFB /* CoreDataEventsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEventsStorage.swift; sourceTree = "<group>"; };
 		23D2AC6E271EC8630036F140 /* Bevy iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bevy iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D2AC71271EC8630036F140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D2AC73271EC8630036F140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -364,6 +372,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		23BDF533272312E2008FADFB /* Events Storage */ = {
+			isa = PBXGroup;
+			children = (
+				23BDF5382723238F008FADFB /* EventsStorage.swift */,
+				23BDF53A2723246C008FADFB /* CoreDataEventsStorage.swift */,
+				23805DE72723EA9A005E6881 /* Entity+Mapping.swift */,
+			);
+			path = "Events Storage";
+			sourceTree = "<group>";
+		};
 		23D2AC65271EC8630036F140 = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +461,7 @@
 		23D2AC8F271ED48D0036F140 /* Persistent Storage */ = {
 			isa = PBXGroup;
 			children = (
+				23BDF533272312E2008FADFB /* Events Storage */,
 				23D2AC90271ED4E50036F140 /* Core Data Storage */,
 			);
 			path = "Persistent Storage";
@@ -451,6 +470,7 @@
 		23D2AC90271ED4E50036F140 /* Core Data Storage */ = {
 			isa = PBXGroup;
 			children = (
+				23BDF53127231220008FADFB /* CoreDataStorage.swift */,
 				23D2AC7A271EC8630036F140 /* Bevy_iOS_Challenge.xcdatamodeld */,
 			);
 			path = "Core Data Storage";
@@ -563,6 +583,7 @@
 				23AF27B7271EF07C00639B53 /* EndPoint.swift in Sources */,
 				23AF27C1271EF97B00639B53 /* String+Url.swift in Sources */,
 				23028A79272135F8009EE8DA /* EmptyParameters.swift in Sources */,
+				23BDF5392723238F008FADFB /* EventsStorage.swift in Sources */,
 				23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */,
 				23028A99272144E5009EE8DA /* UICollectionViewCell+identifier.swift in Sources */,
 				23AF27DF271F092900639B53 /* EventsProviding.swift in Sources */,
@@ -571,6 +592,7 @@
 				23028AA027214565009EE8DA /* EventsTypesDelegate.swift in Sources */,
 				23028A9327213E57009EE8DA /* EventsNavigationController.swift in Sources */,
 				23028A8827213A03009EE8DA /* EventTypeViewModel.swift in Sources */,
+				23805DE82723EA9A005E6881 /* Entity+Mapping.swift in Sources */,
 				23BDF5302722F579008FADFB /* EventDetailsViewModel.swift in Sources */,
 				23028AAB27216144009EE8DA /* UIView+GradientColor.swift in Sources */,
 				23AF27CE271EFF7100639B53 /* DataResponseDecoding.swift in Sources */,
@@ -592,6 +614,7 @@
 				23BDF52E2722F570008FADFB /* EventDetailsViewController.swift in Sources */,
 				23AF27D7271EFFEC00639B53 /* DataRequester.swift in Sources */,
 				23028A8527213943009EE8DA /* EventTableViewCell.swift in Sources */,
+				23BDF53227231220008FADFB /* CoreDataStorage.swift in Sources */,
 				23AF27D3271EFFD100639B53 /* DataRequesting.swift in Sources */,
 				23AF27D5271EFFDE00639B53 /* URLSessionRequesting.swift in Sources */,
 				23AF27D0271EFF8100639B53 /* DataResponseDecoder.swift in Sources */,
@@ -600,6 +623,7 @@
 				23028A8C27213B67009EE8DA /* Storyboard.swift in Sources */,
 				23AF27B9271EF85800639B53 /* NetworkError.swift in Sources */,
 				23AF27C4271EFC5700639B53 /* URLRequestBuilding.swift in Sources */,
+				23BDF53B2723246C008FADFB /* CoreDataEventsStorage.swift in Sources */,
 				23AF27D9271F019B00639B53 /* RequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

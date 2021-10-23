@@ -38,3 +38,4 @@ struct Event: Codable {
         return id
     }
 }
+
