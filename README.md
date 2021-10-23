@@ -22,5 +22,5 @@ Xcode Version 13.0 (13A233)
 - [x] Building Network Layer and adding Events Provider.
 - [x] Handling Events Screen UI and fetching the data to it.
 - [x] Handling Events Details Screen UI.
-- [ ] Handling Cashing and Offline Mode.
+- [x] Handling Cashing and Offline Mode.
 - [ ] Writing unit tests.
