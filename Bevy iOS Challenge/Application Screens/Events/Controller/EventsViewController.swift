@@ -130,6 +130,14 @@ class EventsViewController: UIViewController, Alertable {
     
     @objc func refresh(_ sender: AnyObject) {
         self.refreshControl.endRefreshing()
+        if eventsTableView.numberOfRows(inSection: 0) > 0,
+           !Monitor.isconnectedToInternet {
+            // Fixing Lagining in refreshControl when endRefreshing
+            // while there is no internet connection.
+            self.eventsTableView.scrollToRow(
+                at: IndexPath(row: 0, section: 0),
+                at: .top, animated: true)
+        }
         self.viewModel.inputs.getEvents(fetchingType: .refresh)
     }
 }
