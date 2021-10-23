@@ -32,6 +32,11 @@
 		23805DE82723EA9A005E6881 /* Entity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DE72723EA9A005E6881 /* Entity+Mapping.swift */; };
 		23805DEB2723F5B1005E6881 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DEA2723F5B1005E6881 /* Monitor.swift */; };
 		23805DED2724133E005E6881 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DEC2724133E005E6881 /* EventItem.swift */; };
+		23805DFD27243B27005E6881 /* DataRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DFC27243B27005E6881 /* DataRequesterTests.swift */; };
+		23805E0027243BC2005E6881 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DFF27243BC2005E6881 /* URLSessionMock.swift */; };
+		23805E0327243CD6005E6881 /* NetworkError+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E0227243CD6005E6881 /* NetworkError+Equatable.swift */; };
+		23805E0527243DEE005E6881 /* DataResponseDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E0427243DEE005E6881 /* DataResponseDecoderTests.swift */; };
+		23805E0727243E2F005E6881 /* EventType+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E0627243E2F005E6881 /* EventType+Equatable.swift */; };
 		23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27AE271EE6F600639B53 /* BaseURL.swift */; };
 		23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B0271EE73C00639B53 /* AbsolutePath.swift */; };
 		23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B2271EF05100639B53 /* HTTPMethod.swift */; };
@@ -71,6 +76,16 @@
 		23D2AC99271EDF760036F140 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2AC98271EDF760036F140 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		23805DF627243AE9005E6881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23D2AC66271EC8630036F140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23D2AC6D271EC8630036F140;
+			remoteInfo = "Bevy iOS Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		23028A78272135F8009EE8DA /* EmptyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyParameters.swift; sourceTree = "<group>"; };
 		23028A7D27213914009EE8DA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +112,12 @@
 		23805DE72723EA9A005E6881 /* Entity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Mapping.swift"; sourceTree = "<group>"; };
 		23805DEA2723F5B1005E6881 /* Monitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
 		23805DEC2724133E005E6881 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
+		23805DF227243AE9005E6881 /* Bevy iOS ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bevy iOS ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23805DFC27243B27005E6881 /* DataRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequesterTests.swift; sourceTree = "<group>"; };
+		23805DFF27243BC2005E6881 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		23805E0227243CD6005E6881 /* NetworkError+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkError+Equatable.swift"; sourceTree = "<group>"; };
+		23805E0427243DEE005E6881 /* DataResponseDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseDecoderTests.swift; sourceTree = "<group>"; };
+		23805E0627243E2F005E6881 /* EventType+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventType+Equatable.swift"; sourceTree = "<group>"; };
 		23AF27AE271EE6F600639B53 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		23AF27B0271EE73C00639B53 /* AbsolutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePath.swift; sourceTree = "<group>"; };
 		23AF27B2271EF05100639B53 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -138,6 +159,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23805DEF27243AE9005E6881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23D2AC6B271EC8630036F140 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +265,42 @@
 				23805DEA2723F5B1005E6881 /* Monitor.swift */,
 			);
 			path = Monitor;
+			sourceTree = "<group>";
+		};
+		23805DF327243AE9005E6881 /* Bevy iOS ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				23805E0127243CBE005E6881 /* Equatable */,
+				23805DFE27243BB9005E6881 /* Mocks */,
+				23805DFB27243B1B005E6881 /* Requests */,
+			);
+			path = "Bevy iOS ChallengeTests";
+			sourceTree = "<group>";
+		};
+		23805DFB27243B1B005E6881 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				23805DFC27243B27005E6881 /* DataRequesterTests.swift */,
+				23805E0427243DEE005E6881 /* DataResponseDecoderTests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		23805DFE27243BB9005E6881 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				23805DFF27243BC2005E6881 /* URLSessionMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		23805E0127243CBE005E6881 /* Equatable */ = {
+			isa = PBXGroup;
+			children = (
+				23805E0227243CD6005E6881 /* NetworkError+Equatable.swift */,
+				23805E0627243E2F005E6881 /* EventType+Equatable.swift */,
+			);
+			path = Equatable;
 			sourceTree = "<group>";
 		};
 		23AF27AC271EE6D600639B53 /* Request Manager */ = {
@@ -401,6 +465,7 @@
 			children = (
 				23D2AC88271ECC390036F140 /* README.md */,
 				23D2AC70271EC8630036F140 /* Bevy iOS Challenge */,
+				23805DF327243AE9005E6881 /* Bevy iOS ChallengeTests */,
 				23D2AC6F271EC8630036F140 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -409,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				23D2AC6E271EC8630036F140 /* Bevy iOS Challenge.app */,
+				23805DF227243AE9005E6881 /* Bevy iOS ChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -509,6 +575,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		23805DF127243AE9005E6881 /* Bevy iOS ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23805DFA27243AE9005E6881 /* Build configuration list for PBXNativeTarget "Bevy iOS ChallengeTests" */;
+			buildPhases = (
+				23805DEE27243AE9005E6881 /* Sources */,
+				23805DEF27243AE9005E6881 /* Frameworks */,
+				23805DF027243AE9005E6881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23805DF727243AE9005E6881 /* PBXTargetDependency */,
+			);
+			name = "Bevy iOS ChallengeTests";
+			productName = "Bevy iOS ChallengeTests";
+			productReference = 23805DF227243AE9005E6881 /* Bevy iOS ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		23D2AC6D271EC8630036F140 /* Bevy iOS Challenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23D2AC85271EC8640036F140 /* Build configuration list for PBXNativeTarget "Bevy iOS Challenge" */;
@@ -539,6 +623,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					23805DF127243AE9005E6881 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 23D2AC6D271EC8630036F140;
+					};
 					23D2AC6D271EC8630036F140 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -561,11 +649,19 @@
 			projectRoot = "";
 			targets = (
 				23D2AC6D271EC8630036F140 /* Bevy iOS Challenge */,
+				23805DF127243AE9005E6881 /* Bevy iOS ChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		23805DF027243AE9005E6881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23D2AC6C271EC8630036F140 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,6 +678,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23805DEE27243AE9005E6881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23805E0027243BC2005E6881 /* URLSessionMock.swift in Sources */,
+				23805E0727243E2F005E6881 /* EventType+Equatable.swift in Sources */,
+				23805DFD27243B27005E6881 /* DataRequesterTests.swift in Sources */,
+				23805E0327243CD6005E6881 /* NetworkError+Equatable.swift in Sources */,
+				23805E0527243DEE005E6881 /* DataResponseDecoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23D2AC6A271EC8630036F140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -646,6 +754,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		23805DF727243AE9005E6881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23D2AC6D271EC8630036F140 /* Bevy iOS Challenge */;
+			targetProxy = 23805DF627243AE9005E6881 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		23D2AC77271EC8630036F140 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -666,6 +782,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		23805DF827243AE9005E6881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V78H7WRYL;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bevy.Bevy-iOS-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bevy iOS Challenge.app/Bevy iOS Challenge";
+			};
+			name = Debug;
+		};
+		23805DF927243AE9005E6881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V78H7WRYL;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bevy.Bevy-iOS-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bevy iOS Challenge.app/Bevy iOS Challenge";
+			};
+			name = Release;
+		};
 		23D2AC83271EC8640036F140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -843,6 +1005,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23805DFA27243AE9005E6881 /* Build configuration list for PBXNativeTarget "Bevy iOS ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23805DF827243AE9005E6881 /* Debug */,
+				23805DF927243AE9005E6881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		23D2AC69271EC8630036F140 /* Build configuration list for PBXProject "Bevy iOS Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
