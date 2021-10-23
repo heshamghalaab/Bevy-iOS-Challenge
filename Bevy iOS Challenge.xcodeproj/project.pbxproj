@@ -40,6 +40,9 @@
 		23805E0A27244192005E6881 /* EventsProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E0927244192005E6881 /* EventsProviderTests.swift */; };
 		23805E0C272441BC005E6881 /* MockedRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E0B272441BC005E6881 /* MockedRequestManager.swift */; };
 		23805E0E27244249005E6881 /* MockedEventsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E0D27244249005E6881 /* MockedEventsStorage.swift */; };
+		23805E11272450EF005E6881 /* EventsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E10272450EF005E6881 /* EventsViewModelTests.swift */; };
+		23805E132724518A005E6881 /* MockedEventsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E122724518A005E6881 /* MockedEventsProvider.swift */; };
+		23805E1527245CD9005E6881 /* EventViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805E1427245CD9005E6881 /* EventViewModelTests.swift */; };
 		23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27AE271EE6F600639B53 /* BaseURL.swift */; };
 		23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B0271EE73C00639B53 /* AbsolutePath.swift */; };
 		23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B2271EF05100639B53 /* HTTPMethod.swift */; };
@@ -124,6 +127,9 @@
 		23805E0927244192005E6881 /* EventsProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsProviderTests.swift; sourceTree = "<group>"; };
 		23805E0B272441BC005E6881 /* MockedRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedRequestManager.swift; sourceTree = "<group>"; };
 		23805E0D27244249005E6881 /* MockedEventsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedEventsStorage.swift; sourceTree = "<group>"; };
+		23805E10272450EF005E6881 /* EventsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModelTests.swift; sourceTree = "<group>"; };
+		23805E122724518A005E6881 /* MockedEventsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedEventsProvider.swift; sourceTree = "<group>"; };
+		23805E1427245CD9005E6881 /* EventViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModelTests.swift; sourceTree = "<group>"; };
 		23AF27AE271EE6F600639B53 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		23AF27B0271EE73C00639B53 /* AbsolutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePath.swift; sourceTree = "<group>"; };
 		23AF27B2271EF05100639B53 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -280,6 +286,7 @@
 				23805DFE27243BB9005E6881 /* Mocks */,
 				23805DFB27243B1B005E6881 /* Requests */,
 				23805E0827244179005E6881 /* Providers */,
+				23805E0F27245008005E6881 /* Events */,
 			);
 			path = "Bevy iOS ChallengeTests";
 			sourceTree = "<group>";
@@ -299,6 +306,7 @@
 				23805DFF27243BC2005E6881 /* URLSessionMock.swift */,
 				23805E0B272441BC005E6881 /* MockedRequestManager.swift */,
 				23805E0D27244249005E6881 /* MockedEventsStorage.swift */,
+				23805E122724518A005E6881 /* MockedEventsProvider.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -318,6 +326,15 @@
 				23805E0927244192005E6881 /* EventsProviderTests.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		23805E0F27245008005E6881 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				23805E10272450EF005E6881 /* EventsViewModelTests.swift */,
+				23805E1427245CD9005E6881 /* EventViewModelTests.swift */,
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 		23AF27AC271EE6D600639B53 /* Request Manager */ = {
@@ -702,7 +719,10 @@
 				23805E0027243BC2005E6881 /* URLSessionMock.swift in Sources */,
 				23805E0E27244249005E6881 /* MockedEventsStorage.swift in Sources */,
 				23805E0727243E2F005E6881 /* EventType+Equatable.swift in Sources */,
+				23805E1527245CD9005E6881 /* EventViewModelTests.swift in Sources */,
 				23805E0C272441BC005E6881 /* MockedRequestManager.swift in Sources */,
+				23805E11272450EF005E6881 /* EventsViewModelTests.swift in Sources */,
+				23805E132724518A005E6881 /* MockedEventsProvider.swift in Sources */,
 				23805DFD27243B27005E6881 /* DataRequesterTests.swift in Sources */,
 				23805E0327243CD6005E6881 /* NetworkError+Equatable.swift in Sources */,
 				23805E0527243DEE005E6881 /* DataResponseDecoderTests.swift in Sources */,
