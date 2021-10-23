@@ -23,4 +23,4 @@ Xcode Version 13.0 (13A233)
 - [x] Handling Events Screen UI and fetching the data to it.
 - [x] Handling Events Details Screen UI.
 - [x] Handling Cashing and Offline Mode.
-- [ ] Writing unit tests.
+- [x] Writing unit tests.
