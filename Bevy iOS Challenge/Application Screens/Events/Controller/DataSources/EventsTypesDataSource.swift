@@ -22,7 +22,6 @@ class EventsTypesDataSource: NSObject, UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventTypeCollectionViewCell.identifier, for: indexPath) as! EventTypeCollectionViewCell
         let typeViewModel = viewModel.inputs.eventTypeViewModel(atRow: indexPath.row)
         cell.configure(with: typeViewModel)
-        cell.isTheSelectedType = viewModel.inputs.isTheSelectEventType(atRow: indexPath.row)
         return cell
     }
 }

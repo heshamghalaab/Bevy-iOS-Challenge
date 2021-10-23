@@ -30,6 +30,8 @@
 		23028AAD2721A890009EE8DA /* EventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AAC2721A890009EE8DA /* EventsDataSource.swift */; };
 		23028AAF2721A89D009EE8DA /* EventsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23028AAE2721A89D009EE8DA /* EventsDelegate.swift */; };
 		23805DE82723EA9A005E6881 /* Entity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DE72723EA9A005E6881 /* Entity+Mapping.swift */; };
+		23805DEB2723F5B1005E6881 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DEA2723F5B1005E6881 /* Monitor.swift */; };
+		23805DED2724133E005E6881 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23805DEC2724133E005E6881 /* EventItem.swift */; };
 		23AF27AF271EE6F600639B53 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27AE271EE6F600639B53 /* BaseURL.swift */; };
 		23AF27B1271EE73C00639B53 /* AbsolutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B0271EE73C00639B53 /* AbsolutePath.swift */; };
 		23AF27B3271EF05200639B53 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF27B2271EF05100639B53 /* HTTPMethod.swift */; };
@@ -93,6 +95,8 @@
 		23028AAC2721A890009EE8DA /* EventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataSource.swift; sourceTree = "<group>"; };
 		23028AAE2721A89D009EE8DA /* EventsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDelegate.swift; sourceTree = "<group>"; };
 		23805DE72723EA9A005E6881 /* Entity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Mapping.swift"; sourceTree = "<group>"; };
+		23805DEA2723F5B1005E6881 /* Monitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
+		23805DEC2724133E005E6881 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		23AF27AE271EE6F600639B53 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		23AF27B0271EE73C00639B53 /* AbsolutePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePath.swift; sourceTree = "<group>"; };
 		23AF27B2271EF05100639B53 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -227,6 +231,14 @@
 			path = Alertable;
 			sourceTree = "<group>";
 		};
+		23805DE92723F5AA005E6881 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				23805DEA2723F5B1005E6881 /* Monitor.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
 		23AF27AC271EE6D600639B53 /* Request Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +269,7 @@
 		23AF27BA271EF93300639B53 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				23805DE92723F5AA005E6881 /* Monitor */,
 				23028AA527215E20009EE8DA /* Alertable */,
 				23028AA127215607009EE8DA /* LoadingView */,
 				23028A8D27213C40009EE8DA /* MainFlowPresenter */,
@@ -343,6 +356,7 @@
 				23AF27E2271F0A0400639B53 /* EventType.swift */,
 				23AF27E6271F0A8F00639B53 /* EventsParameters.swift */,
 				23AF27E4271F0A2000639B53 /* Event.swift */,
+				23805DEC2724133E005E6881 /* EventItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -576,6 +590,7 @@
 				23AF27E3271F0A0400639B53 /* EventType.swift in Sources */,
 				23028A822721392E009EE8DA /* EventViewModel.swift in Sources */,
 				23AF27B5271EF06C00639B53 /* EndPointError.swift in Sources */,
+				23805DEB2723F5B1005E6881 /* Monitor.swift in Sources */,
 				23028A7E27213914009EE8DA /* EventsViewController.swift in Sources */,
 				23028AA327215610009EE8DA /* LoadingView.swift in Sources */,
 				23D2AC72271EC8630036F140 /* AppDelegate.swift in Sources */,
@@ -603,6 +618,7 @@
 				23028A9E27214557009EE8DA /* EventsTypesDataSource.swift in Sources */,
 				23AF27E5271F0A2000639B53 /* Event.swift in Sources */,
 				23028A8027213920009EE8DA /* EventsViewModel.swift in Sources */,
+				23805DED2724133E005E6881 /* EventItem.swift in Sources */,
 				23028A8F27213C48009EE8DA /* MainFlowPresenter.swift in Sources */,
 				23D2AC74271EC8630036F140 /* SceneDelegate.swift in Sources */,
 				23AF27BD271EF95600639B53 /* OSLog+Loggers.swift in Sources */,

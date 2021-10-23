@@ -31,7 +31,7 @@ struct EventsProvider: EventsProviding {
         
         cache.getTypes { result in
             if case let .success(types) = result {
-                cached(types ?? [])
+                DispatchQueue.main.async { cached(types ?? []) }
             }
             
             let endPoint = RequestEndPoint<[EventType], EmptyParameters>(
@@ -53,8 +53,10 @@ struct EventsProvider: EventsProviding {
                 cached: @escaping ([Event]) -> Void,
                 completion: @escaping (Result<[Event], Error>) -> Void){
         cache.getEvents(forEventType: eventType) { result in
-            if case let .success(events) = result { cached(events ?? []) }
             
+            if case let .success(events) = result {
+                DispatchQueue.main.async { cached(events ?? []) }
+            }
             
             let parameters = EventsParameters(eventType: eventType.id, page: page)
             let endPoint = RequestEndPoint<[Event], EventsParameters>(

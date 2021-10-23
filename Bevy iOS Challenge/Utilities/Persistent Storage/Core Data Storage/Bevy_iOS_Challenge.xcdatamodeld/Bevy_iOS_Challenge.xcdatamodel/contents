@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="EventIntity" representedClassName="EventIntity" syncable="YES" codeGenerationType="class">
         <attribute name="cover" optional="YES" attributeType="String"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="endDate" optional="YES" attributeType="String"/>
         <attribute name="eventDescription" optional="YES" attributeType="String"/>
         <attribute name="eventTypeId" optional="YES" attributeType="String"/>
@@ -17,6 +18,7 @@
         </uniquenessConstraints>
     </entity>
     <entity name="EventTypeEntity" representedClassName="EventTypeEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="dateAdded" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <uniquenessConstraints>
@@ -26,7 +28,7 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="EventIntity" positionX="267.73046875" positionY="-194.3125" width="128" height="178"/>
-        <element name="EventTypeEntity" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="EventIntity" positionX="267.73046875" positionY="-194.3125" width="128" height="179"/>
+        <element name="EventTypeEntity" positionX="-63" positionY="-18" width="128" height="74"/>
     </elements>
 </model>

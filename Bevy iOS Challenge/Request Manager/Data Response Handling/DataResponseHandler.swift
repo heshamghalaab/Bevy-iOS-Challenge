@@ -7,6 +7,7 @@
 
 import Foundation
 import os.log
+import UIKit
 
 struct DataResponseHandler: DataResponseHandling {
     
@@ -37,9 +38,9 @@ struct DataResponseHandler: DataResponseHandling {
     
     private func resolve(error: Error) -> NetworkError {
         let code = URLError.Code(rawValue: (error as NSError).code)
-        switch code {
-        case .notConnectedToInternet: return .notConnected
-        default: return .generic(error)
+        if code == .notConnectedToInternet || code.rawValue == -1020 {
+            return .notConnected
         }
+        return .generic(error)
     }
 }

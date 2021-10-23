@@ -9,6 +9,7 @@ import Foundation
 
 protocol EventTypeViewModelOutputs {
     var eventTypeText: String { get }
+    var isSelected: Bool { get }
 }
 
 protocol EventTypeViewModelProtocol: AnyObject {
@@ -24,10 +25,12 @@ class EventTypeViewModel: EventTypeViewModelOutputs, EventTypeViewModelProtocol 
     
     private let eventType: EventType
     
-    init(eventType: EventType){
+    init(eventType: EventType, isSelected: Bool){
         self.eventType = eventType
+        self.isSelected = isSelected
     }
     
     /// OutPuts
     var eventTypeText: String { eventType.name }
+    var isSelected: Bool
 }

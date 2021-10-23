@@ -18,19 +18,15 @@ class EventTypeCollectionViewCell: UICollectionViewCell {
 
     func configure(with viewModel: EventTypeViewModelProtocol){
         eventTypeLabel.text = viewModel.outputs.eventTypeText
-    }
-    
-    var isTheSelectedType: Bool? {
-        didSet{
-            if let isTheSelected = isTheSelectedType, isTheSelected {
-                contentView.backgroundColor = .systemBlue
-                eventTypeLabel.textColor = .white
-                eventTypeLabel.font = .boldSystemFont(ofSize: 17)
-            }else{
-                contentView.backgroundColor = .white
-                eventTypeLabel.textColor = .black
-                eventTypeLabel.font = .systemFont(ofSize: 15)
-            }
+        
+        if viewModel.outputs.isSelected {
+            contentView.backgroundColor = .systemBlue
+            eventTypeLabel.textColor = .white
+            eventTypeLabel.font = .boldSystemFont(ofSize: 17)
+        }else{
+            contentView.backgroundColor = .white
+            eventTypeLabel.textColor = .black
+            eventTypeLabel.font = .systemFont(ofSize: 15)
         }
     }
 }

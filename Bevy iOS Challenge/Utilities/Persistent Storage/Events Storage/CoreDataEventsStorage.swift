@@ -24,6 +24,8 @@ extension CoreDataEventsStorage {
         coreDataStorage.performBackgroundTask { context in
             do {
                 let fetchRequest = EventTypeEntity.fetchRequest()
+                fetchRequest.sortDescriptors = [NSSortDescriptor(key:"dateAdded", ascending: true)]
+                
                 let requestEntities = try context.fetch(fetchRequest)
                 let values = requestEntities.map { $0.toEventType() }
                 completion(.success(values))
@@ -55,6 +57,7 @@ extension CoreDataEventsStorage {
             do {
                 let fetchRequest = EventIntity.fetchRequest()
                 fetchRequest.predicate = NSPredicate(format: "eventTypeId == %@", eventType.id)
+                fetchRequest.sortDescriptors = [NSSortDescriptor(key:"dateAdded", ascending: true)]
                 
                 let requestEntities = try context.fetch(fetchRequest)
                 let values = requestEntities.map { $0.toEvent() }

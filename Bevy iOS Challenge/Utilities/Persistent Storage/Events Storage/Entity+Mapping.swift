@@ -13,6 +13,7 @@ extension EventType{
         let entity: EventTypeEntity = EventTypeEntity(context: context)
         entity.id = self.id
         entity.name = self.name
+        entity.dateAdded = Date()
         return entity
     }
 }
@@ -35,6 +36,7 @@ extension Event{
         entity.name = self.name
         entity.startDate = self.startDate
         entity.eventTypeId = eventType.id
+        entity.dateAdded = Date()
         return entity
     }
 }
